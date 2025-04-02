@@ -1,1 +1,163 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.profile-header {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-section {
+    margin-bottom: 15px;
+}
+
+.info-section h3 {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.about-section, .skills-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2979ff;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2979ff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.skill-group {
+    margin-bottom: 25px;
+}
+
+.skill-icons {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+}
+
+.skill-icon i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.react i { color: #61DAFB; }
+.css i { color: #264de4; }
+.js i { color: #F0DB4F; }
+.node i { color: #68A063; }
+.mongodb i { color: #4DB33D; }
+.cpp i { color: #00599C; }
+.python i { color: #306998; }
+.batch i { color: #000000; }
+.aws i { color: #FF9900; }
+.hadoop i { color: #FF5722; }
+
+.skill-bar {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, #2979ff, #1565C0);
+    border-radius: 5px;
+}
+
+.percentage {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
